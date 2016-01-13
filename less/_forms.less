@@ -1,0 +1,89 @@
+i.required {
+  color: @action-color;
+}
+
+form {
+  padding: 1em;
+  legend {
+    border-bottom: 1px solid @primary-color;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding-bottom: 0.25em;
+  }
+  .form-field {
+    margin-bottom: 1em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    label {
+      display: block;
+      width: 100%;
+      font-size: .9em;
+      font-weight: bold;
+      margin: 0 .25em;
+      &.error {
+        position: relative;
+        padding: .25em;
+        background-color: @action-color;
+        color: @white;
+        width: auto;
+        &:after {
+          position: absolute;
+          content: "";
+          bottom: 100%;
+          left: ~"calc(50% - 5px)";
+          width: 0; 
+          height: 0; 
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid @action-color;
+        }
+      }
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: .25em 1em;
+      margin: .25em 0;
+      background-color: fade(@primary-color, 10%);
+      border: 1px solid @black;
+      border: none;
+      border-radius: .25em;
+      font-size: 1em;
+      line-height: 2em;
+      box-shadow: inset -1px 1px 5px fade(@black, 50%);
+      &:focus {
+        box-shadow: -1px 1px 5px fade(@black, 50%) inset,
+                    0px 0px 5px fade(@primary-color, 80%);
+      }
+      &.error {
+        box-shadow: -1px 1px 5px fade(@black, 50%) inset,
+                    0px 0px 5px fade(@action-color, 90%);
+      }
+    }
+  }
+  .form-field.flat{
+    label,
+    input {
+      float: left;
+      width: auto;
+    }
+  }
+}
+
+
+
+
+.form-field:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.form-field { display: inline-block; }
+/* start commented backslash hack \*/
+* html .form-field { height: 1%; }
+.form-field { display: block; }
