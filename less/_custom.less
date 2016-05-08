@@ -60,7 +60,7 @@ a,
 	cursor: pointer;
 	&:hover,
 	&:focus {
-		color: darken(@red, 20%);
+		color: darken(@red, 15%);
 	}
 }
 .block { display: block; }
@@ -73,10 +73,54 @@ a,
 	border-left: none;
 	border-bottom: none;
 	border-top: 3px solid @white;
+	transition: all .25s ease;
+	&.inverse {
+		background: fade(@white, 95%);
+		color: @red;
+		border-top: 3px solid @red;
+		.nav {
+			> li > a {
+				font-size: 1em;
+				color: @red;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				&:hover,
+				&:focus {
+					color: darken(@red, 15%);
+					// background-color: @red;
+				}
+				&:active {
+					background-color: fade(@red, 85%)
+				}
+			}
+			li.active a {
+				color: @white;
+				background-color: @red;
+			}
+		}
+		&-toggle {
+			.icon-bar {
+				background: @red;
+			}
+		}
+		.navbar-header {
+			.navbar-brand {
+				background: @white;
+				color: @red;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				box-shadow: -1px 1px 15px -10px;
+			}
+		}
+	}
 	.nav {
 		> li > a {
+			font-size: 1.5em;
+			transition: all 0.2s ease;
 			color: @white;
 			text-decoration: none;
+			padding-top: 25px;
+			padding-bottom: 25px;
 			.skew();
 			&:hover,
 			&:focus {
@@ -101,23 +145,49 @@ a,
 	}
 	&-header {
 		.navbar-brand {
+			transition: all 0.1s ease;
 			background: @white;
 			color: @red;
 			text-transform: uppercase;
 			text-decoration: none;
 			letter-spacing: 2px;
 			font-weight: 700;
-			.skew();
+			font-size: 3em;
+			height: unset;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			// .skew();
+			
+			transform: rotate(-10deg);
+			transform-origin: 80% top;
+			// animation-name: sway;
+			// animation-duration: 3s;
+			// animation-delay: 0s;
+			// animation-timing-function: cubic-bezier(.45,.05,.55,.95);
+			// animation-fill-mode: forwards;
 		}
 	}
 }
+// @keyframes sway {
+// 	0%{ transform: rotate(-10deg); }
+// 	20%{ transform: rotate(-90deg); }
+// 	40%{ transform: rotate(-60deg); }
+// 	70%{ transform: rotate(-80deg); }
+// 	80%{ transform: rotate(-70deg); }
+// 	90%{ transform: rotate(-75deg); }
+// 	100%{ transform: rotate(-75deg); }
+// }
 
 
 .jumbotron {
 	font-family: 'Oswald', sans-serif;
 	background: @red;
+	background: linear-gradient(to bottom,  @red 50%,@dark-red 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
 	color: @white;
 	position: relative;
+	// margin-bottom: 0;
 	margin-bottom: 6em;
 	> .container {
 		position: relative;
@@ -142,13 +212,13 @@ a,
 			margin-top: 0;
 			font-size: 3em;
 			font-weight: 500;
-			line-height: 1;
+			line-height: 1.05;
 		}
 		p {
 			margin-bottom: 0;
 			font-size: 3em;
 			font-weight: 500;
-			line-height: 1;
+			line-height: 1.05;
 		}
 	}
 	.about-me-link {
@@ -171,7 +241,7 @@ a,
 		height: 0; 
 		border-left: 30px solid transparent; 
 		border-right: 30px solid transparent; 
-		border-top: 30px solid @red;
+		border-top: 30px solid @dark-red;
 		animation: bouncy 2s 2s cubic-bezier(.45,.05,.55,.95) infinite
 	}
 }
@@ -180,6 +250,11 @@ a,
   0% { top: 99%; }
   50% { top: 100%; }
   100% { top: 99%; }
+}
+
+.jumbobottom {
+	margin-bottom: 6em;
+	background: darken(@red, 10%);
 }
 
 
@@ -210,7 +285,8 @@ a,
 
 
 .layer {
-	box-shadow: 0px -40px 80px -80px fade(@black,25%) inset;
+	// box-shadow: 0px -40px 80px -80px fade(@black,25%) inset;
+	border-bottom: 1px solid darken(@white, 10%);
 	padding-bottom: 4em;
 	margin-bottom: 4em;
 }

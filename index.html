@@ -10,96 +10,50 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
   <link rel="stylesheet" href="css/style.css">
-
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
 
+<!-- Navigation -->
   <nav class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
-
-
-
-
       <div class="navbar-header">
-
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
         <a class="navbar-brand" href="#">Clifford</a>
-
       </div>
-
-
-
-
-
-
       <div id="navbar" class="navbar-collapse collapse navbar-right">
-
-
         <ul class="nav navbar-nav">
           <li><a href="#aboutme">about me</a></li>
           <li><a href="#projects">projects</a></li>
-          <li><a href="#">contact</a></li>
-
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li> -->
-
-
-      </ul>
-
-
-
-      </div><!--/.navbar-collapse -->
-
-
-
-
-
-
-
-
-
+          <li><a href="#contact">contact</a></li>
+          <li><a href="#resume">resume</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
 
-
-
-
-
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <!-- Jumbotron -->
   <div id="jumbotron" class="jumbotron">
     <div class="container">
-
-
-
-
       <div class="jumbohead">
-        <p>super hip <br> one-of-a-kind </p>
-        <h1>interaction designer &amp; <br> software engineer</h1>
+        <p>
+          super hip 
+          <br> 
+          one-of-a-kind 
+        </p>
+        <h1>
+          interaction designer &amp; 
+          <br> 
+          software engineer
+        </h1>
       </div>
-
-
-
 
 
       <a class="block text-center about-me-link" href="#aboutme">about me</a>
@@ -107,98 +61,203 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="container">
-    <!-- Example row of columns -->
+
+    <!-- About Me -->
+    <section class="row layer">
+      <div class="col-xs-12 col-sm-7">
+        <h2 id="aboutme">Clifford is unique</h2>
+        <p class="big">
+          I've been working with digital media in some form for over 10 years, and I love learning new things everyday. My enthusiasm for technology is the human factor, the user interface can be known as the keystone to any good project. With a background in design and engineering, I think with an artistic and scientific mind 
+          <br> - bringing a unique perspective to the table. 
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <figure>
+          <img class="img-responsive margin-center" src="img/">
+          <figcaption>
+            figcaption
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="row layer">
+      <div class="col-xs-12 col-sm-7 col-sm-push-5">
+        <h2>Clifford the Sailor</h2>
+        <p class="big">
+          It all started after high-school with a tour in the Navy where I studied electronics engineering. While gaining experience with maintaining and troubleshooting complex electronic and electromechanical systems, I also learned a lot of other key values during this period. 
+        </p>
+        <p class="big">
+          After an honorable discharge from the Navy I joined a Department of Defense Contractor where I got to use my talents to make the Navy's ship entertainment systems a little better. During my tenure with the Defense Media Activity I was the lead engineer in prototyping a next generation broadcast studio system for larger size Navy ships. 
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-sm-pull-7">
+        <figure>
+          <img class="img-responsive margin-center" src="img/simon-mobile.gif">
+          <figcaption>
+            check out this Simon Says emulation using some slick <strong>CSS</strong> and <strong>javaScript</strong> to render the game experience in a Web environment.
+            <button class="btn btn-red btn-slim" type="button" data-toggle="modal" data-target="#simon-says">Play the game</button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="row layer">
+      <div class="col-xs-12 col-sm-7">
+        <h2>Clifford is Creative</h2>
+        <p class="big">
+          While I was prototyping the Navy's SITE 400 TV system I gained an appreciation for how users interact with systems. This is where my creative confidence and interest in human-computer interaction really started to grow.
+        </p>
+        <p class="big">
+          I completed that project and went back to school to study User Interface Design. This pursuit eventually lead me to San Diego's Platt College where I graduated with a 4.0 gpa as Valedictorian for my class with a Bachelors Degree in Web Design.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <figure>
+          <img class="img-responsive margin-center" src="img/lights-mobile.jpg">
+          <figcaption>
+            check out this Simon Says emulation using some slick <strong>CSS</strong> and <strong>javaScript</strong> to render the game experience in a Web environment.
+            <button class="btn btn-red btn-slim" type="button" data-toggle="modal" data-target="#simon-says">Play the game</button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="row layer">
+      <div id="projects" class="col-xs-12 col-sm-7 col-sm-push-5">
+        <h2 >headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-sm-pull-7">
+        <figure>
+          <img class="img-responsive margin-center" src="img/lights-mobile.jpg">
+          <figcaption>
+            check out this Simon Says emulation using some slick <strong>CSS</strong> and <strong>javaScript</strong> to render the game experience in a Web environment.
+            <button class="btn btn-red btn-slim" type="button" data-toggle="modal" data-target="#simon-says">Play the game</button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="row layer">
+      <div id="contact" class="col-xs-12 col-sm-7 col-sm-push-5">
+        <h2 >headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-sm-pull-7">
+        <figure>
+          <img class="img-responsive margin-center" src="img/lights-mobile.jpg">
+          <figcaption>
+            check out this Simon Says emulation using some slick <strong>CSS</strong> and <strong>javaScript</strong> to render the game experience in a Web environment.
+            <button class="btn btn-red btn-slim" type="button" data-toggle="modal" data-target="#simon-says">Play the game</button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="row layer">
+      <div id="resume" class="col-xs-12 col-sm-7 col-sm-push-5">
+        <h2 >headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-sm-pull-7">
+        <figure>
+          <img class="img-responsive margin-center" src="img/lights-mobile.jpg">
+          <figcaption>
+            check out this Simon Says emulation using some slick <strong>CSS</strong> and <strong>javaScript</strong> to render the game experience in a Web environment.
+            <button class="btn btn-red btn-slim" type="button" data-toggle="modal" data-target="#simon-says">Play the game</button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     
 
 
 
 
 
-    <section class="row layer">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
 
 
-    <div class="col-xs-12 col-sm-7">
-      <h2 id="aboutme">Clifford is ...</h2>
-      <p class="big">
-        I've been working with digital media in some form for over 10 years, and I'm learning new things everyday. My enthusiasm for technology is the human factor, the user interface can be known as the keystone to any good project. With a background in design and engineering, I think with an artistic and scientific mind 
-        <br> - bringing a unique perspective to the table. 
-      </p>
-
-
-
-
-
-
-
-
-
-    </div>
-    <div class="col-xs-12 col-sm-5">
-      <figure>
-        <img class="img-responsive margin-center" src="img/simon-mobile.gif">
-        <figcaption>
-          a <strong>Simon Says</strong> emulation using some slick <strong>CSS</strong> and <strong>javaScript</strong> to render the game experience in an <strong>HTML</strong> environment.
-          <button class="btn btn-red btn-slim" type="button" data-toggle="modal" data-target="#simon-says">Play the game</button>
-        </figcaption>
-      </figure>
-    </div>
-
-
-
-
+        <div class="item active">
+          <div style="width: 320px;">
       
-    </section>
+            <p data-height="510" data-theme-id="0" data-slug-hash="IJcve" data-default-tab="result" data-user="commander-clifford" class="codepen">See the Pen <a href="http://codepen.io/commander-clifford/pen/IJcve/">Simon Says</a> by Clifford Ryan Nelson (<a href="http://codepen.io/commander-clifford">@commander-clifford</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+          </div>
+          <div class="carousel-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+
+        <div class="item">
+          <div style="width:320px;height:510px;">
+            slide here
+          </div>
+          <div class="carousel-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+
+        <div class="item">
+          <div style="width:320px;height:510px;">
+            slide here
+          </div>
+          <div class="carousel-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
 
 
 
-    <section class="row layer">
 
+      </div>
 
-    <div id="projects" class="col-xs-12 col-sm-7 col-sm-push-5">
-      <h2 >headline</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <div class="col-xs-12 col-sm-5 col-sm-pull-7">
-      <img class="img-responsive" src="img/simon-mobile.gif">
-    </div>
-
-
-
-
-      
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -211,32 +270,27 @@
     <footer>
       <p>&copy; Clifford 2016</p>
     </footer>
+
   </div> <!-- /container -->        
 
-
-
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="simon-says" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <!-- Simon Says Modal -->
+  <div class="modal fade" id="simon-says" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Simon Says</h4>
+        </div>
+        <div class="modal-body">
+          Oh hey! You clicked the button! But I haven't built this part yet, check back soon.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
